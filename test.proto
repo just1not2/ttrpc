@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package ttrpc;
 
-option go_package = "github.com/containerd/ttrpc/internal";
+option go_package = "github.com/just1not2/ttrpc/internal";
 
 message TestPayload {
 	string foo = 1;

@@ -24,8 +24,8 @@ import (
 	"net"
 	"os"
 
-	ttrpc "github.com/containerd/ttrpc"
-	"github.com/containerd/ttrpc/example"
+	ttrpc "github.com/just1not2/ttrpc"
+	"github.com/just1not2/ttrpc/example"
 	"google.golang.org/protobuf/types/known/emptypb"
 )
 

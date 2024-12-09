@@ -20,7 +20,7 @@ package ttrpc.integration.streaming;
 
 import "google/protobuf/empty.proto";
 
-option go_package = "github.com/containerd/ttrpc/integration/streaming;streaming";
+option go_package = "github.com/just1not2/ttrpc/integration/streaming;streaming";
 
 // Shim service is launched for each container and is responsible for owning the IO
 // for the container and its additional processes.  The shim is also the parent of

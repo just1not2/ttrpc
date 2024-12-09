@@ -53,36 +53,36 @@ func newGenerator(out *protogen.GeneratedFile) *generator {
 		GoName:       "Context",
 	})
 	gen.ident.server = out.QualifiedGoIdent(protogen.GoIdent{
-		GoImportPath: "github.com/containerd/ttrpc",
+		GoImportPath: "github.com/just1not2/ttrpc",
 		GoName:       "Server",
 	})
 	gen.ident.client = out.QualifiedGoIdent(protogen.GoIdent{
-		GoImportPath: "github.com/containerd/ttrpc",
+		GoImportPath: "github.com/just1not2/ttrpc",
 		GoName:       "Client",
 	})
 	gen.ident.method = out.QualifiedGoIdent(protogen.GoIdent{
-		GoImportPath: "github.com/containerd/ttrpc",
+		GoImportPath: "github.com/just1not2/ttrpc",
 		GoName:       "Method",
 	})
 	gen.ident.stream = out.QualifiedGoIdent(protogen.GoIdent{
-		GoImportPath: "github.com/containerd/ttrpc",
+		GoImportPath: "github.com/just1not2/ttrpc",
 		GoName:       "Stream",
 	})
 	gen.ident.serviceDesc = out.QualifiedGoIdent(protogen.GoIdent{
-		GoImportPath: "github.com/containerd/ttrpc",
+		GoImportPath: "github.com/just1not2/ttrpc",
 		GoName:       "ServiceDesc",
 	})
 	gen.ident.streamDesc = out.QualifiedGoIdent(protogen.GoIdent{
-		GoImportPath: "github.com/containerd/ttrpc",
+		GoImportPath: "github.com/just1not2/ttrpc",
 		GoName:       "StreamDesc",
 	})
 
 	gen.ident.streamServerIdent = protogen.GoIdent{
-		GoImportPath: "github.com/containerd/ttrpc",
+		GoImportPath: "github.com/just1not2/ttrpc",
 		GoName:       "StreamServer",
 	}
 	gen.ident.streamClientIdent = protogen.GoIdent{
-		GoImportPath: "github.com/containerd/ttrpc",
+		GoImportPath: "github.com/just1not2/ttrpc",
 		GoName:       "ClientStream",
 	}
 	gen.ident.streamServer = out.QualifiedGoIdent(gen.ident.streamServerIdent)

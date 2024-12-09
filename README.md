@@ -1,6 +1,6 @@
 # ttrpc
 
-[![Build Status](https://github.com/containerd/ttrpc/actions/workflows/ci.yml/badge.svg)](https://github.com/containerd/ttrpc/actions/workflows/ci.yml)
+[![Build Status](https://github.com/just1not2/ttrpc/actions/workflows/ci.yml/badge.svg)](https://github.com/just1not2/ttrpc/actions/workflows/ci.yml)
 
 GRPC for low-memory environments.
 

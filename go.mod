@@ -1,4 +1,4 @@
-module github.com/containerd/ttrpc
+module github.com/just1not2/ttrpc
 
 go 1.19
 

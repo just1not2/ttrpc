@@ -28,9 +28,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/containerd/ttrpc"
-	"github.com/containerd/ttrpc/integration/streaming"
 	"github.com/golang/protobuf/ptypes/empty"
+	"github.com/just1not2/ttrpc"
+	"github.com/just1not2/ttrpc/integration/streaming"
 	"google.golang.org/protobuf/types/known/emptypb"
 )
 

@@ -21,7 +21,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/containerd/ttrpc/internal"
+	"github.com/just1not2/ttrpc/internal"
 )
 
 func TestUserOnCloseWait(t *testing.T) {

@@ -22,7 +22,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/containerd/ttrpc/internal"
+	"github.com/just1not2/ttrpc/internal"
 )
 
 func TestUnaryClientInterceptor(t *testing.T) {

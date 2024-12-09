@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.27.1
 // 	protoc        v3.11.4
-// source: github.com/containerd/ttrpc/example/example.proto
+// source: github.com/just1not2/ttrpc/example/example.proto
 
 package example
 

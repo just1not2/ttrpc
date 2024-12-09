@@ -4,7 +4,7 @@ package ttrpc;
 
 import "proto/status.proto";
 
-option go_package = "github.com/containerd/ttrpc";
+option go_package = "github.com/just1not2/ttrpc";
 
 message Request {
 	string service = 1;
