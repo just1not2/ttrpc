@@ -17,3 +17,5 @@ require (
 	github.com/sirupsen/logrus v1.9.3 // indirect
 	golang.org/x/net v0.23.0 // indirect
 )
+
+replace github.com/containerd/ttrpc => .
