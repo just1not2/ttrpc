@@ -21,7 +21,7 @@ import (
 	"io"
 	"testing"
 
-	"github.com/containerd/ttrpc/internal"
+	"github.com/just1not2/ttrpc/internal"
 )
 
 func TestStreamClient(t *testing.T) {

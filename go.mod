@@ -1,4 +1,4 @@
-module github.com/containerd/ttrpc
+module github.com/just1not2/ttrpc
 
 go 1.19
 
@@ -17,3 +17,5 @@ require (
 	github.com/sirupsen/logrus v1.9.3 // indirect
 	golang.org/x/net v0.23.0 // indirect
 )
+
+replace github.com/containerd/ttrpc => .

@@ -4,7 +4,7 @@ package ttrpc.example.v1;
 
 import "google/protobuf/empty.proto";
 
-option go_package = "github.com/containerd/ttrpc/example;example";
+option go_package = "github.com/just1not2/ttrpc/example;example";
 
 service Example {
 	rpc Method1(Method1Request) returns (Method1Response);

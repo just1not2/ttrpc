@@ -22,7 +22,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/containerd/ttrpc/internal"
+	"github.com/just1not2/ttrpc/internal"
 	"github.com/prometheus/procfs"
 )
 

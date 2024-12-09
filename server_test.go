@@ -29,7 +29,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/containerd/ttrpc/internal"
+	"github.com/just1not2/ttrpc/internal"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 	"google.golang.org/protobuf/proto"

@@ -19,7 +19,7 @@
 
 package main
 
-import ttrpc "github.com/containerd/ttrpc"
+import ttrpc "github.com/just1not2/ttrpc"
 
 func defaultHandshaker() ttrpc.Handshaker {
 	return nil

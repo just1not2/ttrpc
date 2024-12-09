@@ -29,7 +29,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          path: src/github.com/containerd/ttrpc
+          path: src/github.com/just1not2/ttrpc
 
       - uses: actions/setup-go@v5
         with:
@@ -41,11 +41,11 @@ jobs:
           version: v1.51.2
           args: --timeout=5m
           skip-cache: true
-          working-directory: src/github.com/containerd/ttrpc
+          working-directory: src/github.com/just1not2/ttrpc
 
       - name: golangci-lint errors
         run: golangci-lint run
-        working-directory: src/github.com/containerd/ttrpc
+        working-directory: src/github.com/just1not2/ttrpc
         if: ${{ failure() }}
 
   #
@@ -59,7 +59,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          path: src/github.com/containerd/ttrpc
+          path: src/github.com/just1not2/ttrpc
           fetch-depth: 25
 
       - uses: actions/setup-go@v5
@@ -68,7 +68,7 @@ jobs:
 
       - uses: containerd/project-checks@v1.1.0
         with:
-          working-directory: src/github.com/containerd/ttrpc
+          working-directory: src/github.com/just1not2/ttrpc
 
   #
   # Build and Test project
@@ -88,7 +88,7 @@ jobs:
     - name: Check out code
       uses: actions/checkout@v4
       with:
-        path: src/github.com/containerd/ttrpc
+        path: src/github.com/just1not2/ttrpc
         fetch-depth: 25
 
     - uses: actions/setup-go@v5
@@ -96,17 +96,17 @@ jobs:
         go-version: ${{ matrix.go }}
 
     - name: Test
-      working-directory: src/github.com/containerd/ttrpc
+      working-directory: src/github.com/just1not2/ttrpc
       run: |
         make test
 
     - name: Coverage
-      working-directory: src/github.com/containerd/ttrpc
+      working-directory: src/github.com/just1not2/ttrpc
       run: |
         make coverage TESTFLAGS_RACE=-race
 
     - name: Integration Tests
-      working-directory: src/github.com/containerd/ttrpc
+      working-directory: src/github.com/just1not2/ttrpc
       run: |
         make integration
 
@@ -122,7 +122,7 @@ jobs:
     - name: Check out code
       uses: actions/checkout@v4
       with:
-        path: src/github.com/containerd/ttrpc
+        path: src/github.com/just1not2/ttrpc
         fetch-depth: 25
 
     - uses: actions/setup-go@v5
@@ -137,17 +137,17 @@ jobs:
         echo "${{ github.workspace }}/bin" >> $GITHUB_PATH
 
     - name: Install dependencies
-      working-directory: src/github.com/containerd/ttrpc
+      working-directory: src/github.com/just1not2/ttrpc
       run: |
         sudo make install-protobuf
         make install-protobuild
 
     - name: Install protoc-gen-go-ttrpc
-      working-directory: src/github.com/containerd/ttrpc
+      working-directory: src/github.com/just1not2/ttrpc
       run: |
         make install
 
     - name: Run Protobuild
-      working-directory: src/github.com/containerd/ttrpc
+      working-directory: src/github.com/just1not2/ttrpc
       run: |
         make check-protos

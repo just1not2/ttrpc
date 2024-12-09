@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.28.1
 // 	protoc        v3.20.1
-// source: github.com/containerd/ttrpc/test.proto
+// source: github.com/just1not2/ttrpc/test.proto
 
 package internal
 
